@@ -22,13 +22,22 @@ public class MyPanelClass extends JPanel {
                         int height = y2 - y1;
  
                         //Paint the background
-                        g.setColor(Color.YELLOW);
+                        g.setColor(Color.GRAY);
                         g.fillRect(x1, y1, width + 1, height + 1);
-                        //Draw a border.
-                        g.setColor(Color.BLACK);
-                        g.drawRect(x1,  y1,  width, height);
-                        //Draw a second border.
-                        g.setColor(Color.GREEN);
-                        g.drawRect(x1+15, y1+15, width-30, height-30);
+//                        //Draw a border.
+//                        g.setColor(Color.BLACK);
+//                        g.drawRect(x1,  y1,  width, height);
+//                        //Draw a second border.
+//                        g.setColor(Color.GREEN);
+//                        g.drawRect(x1+15, y1+15, width-30, height-30);
+//                        
+//                        g.setColor(Color.WHITE);
+//                        g.drawLine(x1, y1, x2, y2);
+//                        
+//                        g.setColor(Color.BLUE);
+//                        g.drawLine(x2, y1, x1, y2);
+                        
+                        g.setColor(Color.ORANGE);
+                        g.fillOval((x2-55)/2, (y2-55)/2, 55, 55);
             }
 }
