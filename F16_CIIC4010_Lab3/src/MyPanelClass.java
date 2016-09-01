@@ -29,7 +29,7 @@ public class MyPanelClass extends JPanel {
 //                       
                           //Draw a border.
 //                        g.setColor(Color.BLACK);
-//                        g.drawRect(x1,  y1,  width, height);
+//                        g.drawRect(x1,  y1,  width, height);                        
 //                      
                           //Draw a second border.
 //                        g.setColor(Color.GREEN);
@@ -57,22 +57,41 @@ public class MyPanelClass extends JPanel {
 //                        p.addPoint(x1 + 15, y1 + 45);
 //                        p.addPoint(x1 + 15, y1 + 25);
 //                        g.setColor(Color.WHITE);
-//                        g.fillPolygon(p);
+//                        g.fillPolygon(p);                                    
                         
-                          //Draw a star
-                          Polygon p2 = new Polygon();
-                          p2.addPoint(x1 + 25, y1 + 73);
-                          p2.addPoint(x1 + 41, y1 + 73);
-                          p2.addPoint(x1 + 47, y1 + 58);
-                          p2.addPoint(x1 + 53, y1 + 73);
-                          p2.addPoint(x1 + 69, y1 + 73);
-                          p2.addPoint(x1 + 56, y1 + 83);
-                          p2.addPoint(x1 + 61, y1 + 98);
-                          p2.addPoint(x1 + 47, y1 + 88);
-                          p2.addPoint(x1 + 34, y1 + 98);
-                          p2.addPoint(x1 + 38, y1 + 83);
-                          g.setColor(Color.WHITE);
-                          g.drawPolygon(p2);
+                        //Draw the Red body
+                        g.setColor(Color.RED);
+                        g.fillRect(x1 + 10,  y1 + 10,  x1 + 210, y1 + 150);
+                        
+                        //Draw White rectangles.
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1 + 10, y1 + 38, x1 + 210, (y1+150)/5);
+                        g.setColor(Color.WHITE);
+                        g.fillRect(x1 + 10, y1 + 99 , x1 + 210, (y1+150)/5);
+                        
+                        //Draw the Blue triangle.
+                        Polygon triangle = new Polygon();
+                        triangle.addPoint(x1 + 10, y1 + 10);
+                        triangle.addPoint(x1 + 115, y1 + 85 );
+                        triangle.addPoint(x1 + 10, y1 + 160);     
+                        g.setColor(Color.BLUE);
+                        g.fillPolygon(triangle);
+                        
+//                      Draw the White star.
+                        Polygon p2 = new Polygon();
+                        p2.addPoint(x1 + 25, y1 + 78);
+                        p2.addPoint(x1 + 41, y1 + 78);
+                        p2.addPoint(x1 + 47, y1 + 63);
+                        p2.addPoint(x1 + 53, y1 + 78);
+                        p2.addPoint(x1 + 69, y1 + 78);
+                        p2.addPoint(x1 + 56, y1 + 88);
+                        p2.addPoint(x1 + 61, y1 + 103);
+                        p2.addPoint(x1 + 47, y1 + 93);
+                        p2.addPoint(x1 + 34, y1 + 103);
+                        p2.addPoint(x1 + 38, y1 + 88);
+                        g.setColor(Color.WHITE);
+                        g.fillPolygon(p2);
+                        
                         
             }
 }
